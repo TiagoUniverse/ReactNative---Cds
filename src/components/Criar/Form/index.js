@@ -57,6 +57,7 @@ export default function Form() {
         <Text style={styles.topoTitulo}>Toca do Vinil</Text>
       </View>
 
+
       <Result messageResult={message} />
 
       <View style={styles.container}>
@@ -79,7 +80,7 @@ export default function Form() {
         <Button title={textButton} onPress={validation} />
       </View>
 
-      
+
     </ScrollView>
   );
 }
