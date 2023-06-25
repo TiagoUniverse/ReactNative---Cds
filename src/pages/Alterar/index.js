@@ -77,7 +77,7 @@ export default function Alterar() {
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.topo}>
-          <Text style={styles.topoTitulo}>AquaVitta</Text>
+          <Text style={styles.topoTitulo}>Toca do Vinil</Text>
         </View>
 
         {cdEscolhido != null && (

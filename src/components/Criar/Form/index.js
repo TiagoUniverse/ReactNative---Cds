@@ -54,7 +54,7 @@ export default function Form() {
   return (
     <ScrollView>
       <View style={styles.topo}>
-        <Text style={styles.topoTitulo}>AquaVitta</Text>
+        <Text style={styles.topoTitulo}>Toca do Vinil</Text>
       </View>
       <View style={styles.container}>
         <Text style={styles.Textt}>Nome do CD:</Text>

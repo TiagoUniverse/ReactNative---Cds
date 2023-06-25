@@ -14,12 +14,12 @@ const Stack = createNativeStackNavigator();
 export default function App(){
   return (
     <NavigationContainer >
-      <Stack.Navigator initialRouteName='AquaVitta' screenOptions={{
+      <Stack.Navigator initialRouteName='Toca do Vinil' screenOptions={{
         headerMode: 'screen',
         headerTintColor: 'white',
         headerStyle: { backgroundColor: '#0000CD' },
       }} >
-        <Stack.Screen name="AquaVitta" component={Home} />
+        <Stack.Screen name="Toca do Vinil" component={Home} />
         <Stack.Screen name="Criar" component={Criar}  />
         <Stack.Screen name="Consultar" component={Consultar} />
         <Stack.Screen name="Alterar" component={Alterar} />

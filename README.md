@@ -35,11 +35,11 @@ Desenvolver um aplicativo mobile para registrar e monitorar os pontos, com telas
 
 
 <li>Para clonar o repositório escreva o comando abaixo: </li> 
-git clone https://github.com/TiagoUniverse/ReactNative---AquaVitta
+git clone https://github.com/TiagoUniverse/ReactNative---Toca do Vinil
 
 <br>
 <li> Entre na pasta que foi criada do projeto: <br> 
-cd ReactNative---AquaVitta
+cd ReactNative---Toca do Vinil
 <br>
 
 <br>

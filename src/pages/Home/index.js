@@ -13,7 +13,7 @@ export default function Home({ navigation }) {
                     height: '50%',
                     alignItems: 'center',
                 }}
-                source={require('../../../assets/logo.png')}
+                source={require('../../../assets/banner.png')}
                 />
                 <Text style={styles.menu}> Menu </Text>
                 <View style={styles.buttonOutside}>
