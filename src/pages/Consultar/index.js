@@ -19,6 +19,7 @@ const db = getDatabase();
 export default function Consultar() {
   const [cdEscolhido, setcdEscolhido] = useState(null);
   const [nomeCd, setNomeCd] = useState(null);
+  const [erroBusca, setErroBusca] = useState(null);
 
   const getCd = (nomeCd) => {
     const cdsRef = ref(db, 'cds');
@@ -31,17 +32,18 @@ export default function Consultar() {
 
         if (cdEncontrado) {
           setcdEscolhido(cdEncontrado);
+          setErroBusca(null);
         } else {
-          Alert.alert('Falha na busca', 'Não encontrei nenhum CD com este nome!');
           setcdEscolhido(null);
+          setErroBusca('Não encontrei nenhum CD com este nome!');
         }
       } else {
-        Alert.alert('Falha na busca', 'Não encontrei nenhum CD cadastrado!');
         setcdEscolhido(null);
+        setErroBusca('Não encontrei nenhum CD cadastrado!');
       }
     }, (error) => {
-      Alert.alert('Erro', 'Ocorreu um erro ao buscar os CDs.');
       setcdEscolhido(null);
+      setErroBusca('Ocorreu um erro ao buscar os CDs.');
     });
   };
 
@@ -74,6 +76,12 @@ export default function Consultar() {
 
           <Button title="Consultar" onPress={() => getCd(nomeCd)} />
         </View>
+
+        {erroBusca && (
+          <View style={styles.cardContainer}>
+            <Text style={styles.erro}>{erroBusca}</Text>
+          </View>
+        )}
       </ScrollView>
     </View>
   );
@@ -91,6 +99,7 @@ const styles = StyleSheet.create({
   Box: { alignItems: 'center' },
 
   linha: { fontSize: 18, marginBottom: 10, borderRadius: 4, paddingLeft: 10, paddingBottom: 2, paddingTop: 2 },
+  erro: { fontSize: 18, marginBottom: 10, borderRadius: 4, paddingLeft: 10, paddingBottom: 2, paddingTop: 2, color: 'red' },
 
   TextInputt: {
     backgroundColor: '#DCDCDC',
