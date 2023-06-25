@@ -1,14 +1,14 @@
-<center> <h1>Projeto integrador: Aqua Vitta 💧 </h1> <hr> </center>
+<center> <h1>Projeto integrador: CDS </h1> <hr> </center>
 <center> <p> Versão desenvolvida em React Native  </p> </center>
 
 <br>
-Seja Bem vindo ao README da Aqua Vitta versão mobile. Logo abaixo se encontra as instruções e informações a respeito do processo de desenvolvimento deste projeto.
+Seja Bem vindo ao README da CDS versão mobile. Logo abaixo se encontra as instruções e informações a respeito do processo de desenvolvimento deste projeto.
 
 <br>
 
 ## ➡️Introdução
 
-Quando se trata de cadastro e monitoramento de pontos de rios, muitas aplicações trabalham de forma física e dependente do uso de um computador. Isso resulta em atraso na entrega dos dados e perda de eficiência do tempo, além da dificuldade para atualizar os registros de pontos de rios. Diante dessa problemática de falta de mobilidade, nossa equipe do 3ª período foi contatada para desenvolver uma solução mobile para salvar os rios e seus dados.
+<!-- Quando se trata de cadastro e monitoramento de pontos de rios, muitas aplicações trabalham de forma física e dependente do uso de um computador. Isso resulta em atraso na entrega dos dados e perda de eficiência do tempo, além da dificuldade para atualizar os registros de pontos de rios. Diante dessa problemática de falta de mobilidade, nossa equipe do 3ª período foi contatada para desenvolver uma solução mobile para salvar os rios e seus dados. -->
 
 ---
 
@@ -45,6 +45,10 @@ cd ReactNative---AquaVitta
 <br>
 <li> Digite o comando abaixo para instalar os pacotes do projeto: <br>
 npm install
+
+<br>
+<li> Digite o comando abaixo para funcionar o modo Legado: <br>
+set NODE_OPTIONS=--openssl-legacy-provider
 
 <br>
 <li>Digite o comando "expo start" ou "npm start". Caso não funcione, digite "npm run start" e a aplicação será aberta no navegador.
