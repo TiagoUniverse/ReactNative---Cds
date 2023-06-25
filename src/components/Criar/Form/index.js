@@ -13,11 +13,12 @@ const firebaseConfig = {
     appId: "1:140079233359:web:ddc4d2eb07ac60b63bad3a"
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getDatabase();
-const cdsRef = ref(db, 'cds');
+
 
 export default function Form() {
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase();
+    const cdsRef = ref(db, 'cds');
   const [nome, setNome] = useState("");
   const [compositor, setCompositor] = useState("");
   const [message, setMessage] = useState("Preencha as informações do CD");
