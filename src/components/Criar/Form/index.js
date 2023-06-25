@@ -5,20 +5,20 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, push, set } from 'firebase/database';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCTXwvVKN7uUQZgfc9wWBRY1ZurfWzsEL4",
-    authDomain: "crud-vinil.firebaseapp.com",
-    projectId: "crud-vinil",
-    storageBucket: "crud-vinil.appspot.com",
-    messagingSenderId: "140079233359",
-    appId: "1:140079233359:web:ddc4d2eb07ac60b63bad3a"
+  apiKey: "AIzaSyCTXwvVKN7uUQZgfc9wWBRY1ZurfWzsEL4",
+  authDomain: "crud-vinil.firebaseapp.com",
+  projectId: "crud-vinil",
+  storageBucket: "crud-vinil.appspot.com",
+  messagingSenderId: "140079233359",
+  appId: "1:140079233359:web:ddc4d2eb07ac60b63bad3a"
 };
 
 
 
 export default function Form() {
-    const app = initializeApp(firebaseConfig);
-    const db = getDatabase();
-    const cdsRef = ref(db, 'cds');
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase();
+  const cdsRef = ref(db, 'cds');
   const [nome, setNome] = useState("");
   const [compositor, setCompositor] = useState("");
   const [message, setMessage] = useState("Preencha as informações do CD");
@@ -56,6 +56,9 @@ export default function Form() {
       <View style={styles.topo}>
         <Text style={styles.topoTitulo}>Toca do Vinil</Text>
       </View>
+
+      <Result messageResult={message} />
+
       <View style={styles.container}>
         <Text style={styles.Textt}>Nome do CD:</Text>
         <TextInput
@@ -65,6 +68,7 @@ export default function Form() {
           keyboardType="text"
         />
 
+        <Text style={styles.Textt}>Nome do compositor:</Text>
         <TextInput
           style={styles.TextInputt}
           onChangeText={setCompositor}
@@ -75,7 +79,7 @@ export default function Form() {
         <Button title={textButton} onPress={validation} />
       </View>
 
-      <Result messageResult={message} />
+      
     </ScrollView>
   );
 }
