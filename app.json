@@ -1,10 +1,11 @@
 {
   "expo": {
+    
     "name": "Toca do Vinil",
     "slug": "Toca do Vinil",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/navegador foto.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -22,12 +23,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/cds navegador foto.png.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "cds icon": "./assets/cds navegador foto.png.png"
     }
   }
 }
